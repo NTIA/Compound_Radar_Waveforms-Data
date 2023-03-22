@@ -1,7 +1,7 @@
 # Data for NTIA Technical Memorandum TM 23-XXX #
 ## Examining the Effects of Resolution Bandwidth when Measuring Compound Radar Waveforms ##
 
-The data associated with NTIA TM-23-XXX is contained in this repository. The data directories follow a similar format to the report with individual directories for the P0N, Q3N, and compund test cases. Each of these directories contains the measured spectrum data contained in the "Stepped" files and a folder containing all of the figures used in the Tech Memo. 
+The data associated with NTIA TM-23-XXX is contained in this repository. The data directories follow a format similar to the report with individual directories for the P0N, Q3N, and compound test cases. Each of these directories contains the measured spectrum data contained in the "Stepped" files and a folder containing all of the figures used in the Tech Memo. 
 
 ## Stepped Measurement Files ##
 
@@ -11,17 +11,17 @@ Each RBW was collected as an "event" in the Stepped measurement file so there ar
 The variables contained within the measurement files follow this format:
 
 1.	CalPathandFileName: provides the directory and filename for the calibration file used to apply calibration corrections to the saved data as a single string
-	a.	Will be empty (â€˜ â€˜) if calibration corrections were not applied to the data
-	b.	Ex. â€˜C:\temp\Calfile1.matâ€™
+	a.	Will be empty (‘ ‘) if calibration corrections were not applied to the data
+	b.	Ex. ‘C:\temp\Calfile1.mat’
 2.	Comments:  contains the user comments entered by the user using the edit menu in the Stepped measurement
 3.	CompleteMeasMessage: String indicating how the measurement arrived at completion
 	a.	Three possibilities
-	i.	â€˜The measurement completed successfullyâ€™ â€“ indicates that it ran and completed normally
-	ii.	â€˜The measurement stopped prematurely due to errorâ€™ â€“ indicates that a severe error occurred that required the measurement to stop
+	i.	‘The measurement completed successfully’ – indicates that it ran and completed normally
+	ii.	‘The measurement stopped prematurely due to error’ – indicates that a severe error occurred that required the measurement to stop
 		1.	Data may not be saved properly
-		2.	Most predictable errors are handled seamlessly by the measurement but some, such as instrument communication failures, canâ€™t be dealt with
-	iii.	â€˜The measurement was stopped prematurely by userâ€™ â€“ indicates that the user stopped the measurement before it was complete
-		1.	All data up to the time the measurement was stopped will be saved, however there may be some preallocated variables that wonâ€™t contain information regarding sweeps that never got completed
+		2.	Most predictable errors are handled seamlessly by the measurement but some, such as instrument communication failures, can’t be dealt with
+	iii.	‘The measurement was stopped prematurely by user’ – indicates that the user stopped the measurement before it was complete
+		1.	All data up to the time the measurement was stopped will be saved, however there may be some preallocated variables that won’t contain information regarding sweeps that never got completed
 4.	ErrorLog: number of errors x 2 cell array containing information regarding errors that occurred during the measurement
 	a.	First column = MException object of the error, which contains a lot of information regarding the error.
 	b.	Second column = time and date stamp from the 5G computer indicating when the error occurred
@@ -68,9 +68,9 @@ The variables contained within the measurement files follow this format:
 		ii.	Presel1: Primary preselector
 		iii.	Presel2: Secondary preselector
 		iv.	YIGTracker: YIG Tracker
-	b.	Unused instrument fields will contain the string â€˜Noneâ€™
+	b.	Unused instrument fields will contain the string ‘None’
 9.	MeasStartTime: a string containing the time and date (from computer) that the measurement was started (ex. 05-Apr-2013 17:54:42)
-10.	MeasType: string indicating the type of measurement, â€˜Steppedâ€™
+10.	MeasType: string indicating the type of measurement, ‘Stepped’
 11.	NumEvents: number of events run by the measurement
 12.	event: struct containing all of the data collected for each measurement event as specified in the event table 
 	a.	Data for each event is indexed as such: event(<event number>).<Field Name>
@@ -87,7 +87,7 @@ The variables contained within the measurement files follow this format:
 			8.	CompletionTime: time and date stamp from RSMS-5G computer indicating when the event completed
 			9.	RawMagTraceMatrix: Contains a matrix of all the spectrum analyzer sweeps used to create the overall stepped measurement spectrum.
 			10.	CalCorrectedMag: data that has been corrected for primary preselector or spectrum analyzer attenuation level and calibration system gain data
-			11.	PulseParamTraceData: struct containing data taken when the pulse parameter feature is used â€“ will be empty, [],  if pulse data is not taken
+			11.	PulseParamTraceData: struct containing data taken when the pulse parameter feature is used – will be empty, [],  if pulse data is not taken
 				a.	Fields:
 					i.	PeaksMatrix: number of peaks x 3 matrix
 						1.	Column 1 = Frequency Value
