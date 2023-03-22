@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+title: 'Examining the Effects of Resolution Bandwidth when Measuring Compound Radar Waveforms Data'
+message: >-
+  If you use this dataset, please cite it using the
+  metadata from this file.
+type: data
+authors:
+  - given-names: Geoff
+    family-names: Sanders
+    email: gesanders@ntia.gov
+doi: XX.XXXXX/zenodo.XXXXXXX
+url: https://github.com/ErikHillNTIA/Examining_the_Effects_of_Resolution_Bandwidth_when_Measuring_Compound_Radar_Waveforms-Data
+version: 1.0
