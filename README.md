@@ -17,7 +17,7 @@ Each RBW was collected as an "event" in the Stepped measurement file so there ar
 The .mat files may be loaded into Matlab via the command:
 
 ```Matlab
-load('path\to\file\filename.mat)
+load('path\to\file\filename.mat')
 ```
 
 The variables contained within the measurement files follow this format:
