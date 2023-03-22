@@ -156,6 +156,7 @@ The variables contained within the measurement files follow this format:
 
 
 ## Sponsor
+This report and associated data were sponsored by the NTIA Office of Spectrum Management (OSM). https://www.ntia.doc.gov/office/office-spectrum-management-osm
 
 ## References ##
 
