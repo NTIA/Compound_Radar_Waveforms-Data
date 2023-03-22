@@ -1,4 +1,3 @@
-Data used by NTIA/ITS TR-XX-XXX "Examining the Effects of Resolution Bandwidth when Measuring Compound Radar Waveforms"
 # Data for NTIA Technical Memorandum TM 23-XXX #
 # Examining the Effects of Resolution Bandwidth when Measuring Compound Radar Waveforms #
 
