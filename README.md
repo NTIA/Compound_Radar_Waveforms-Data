@@ -1,5 +1,6 @@
 # Data for NTIA Technical Memorandum TM 23-XXX
 ### Examining the Effects of Resolution Bandwidth when Measuring Compound Radar Waveforms
+[![DOI](https://zenodo.org/badge/540043368.svg)](https://zenodo.org/badge/latestdoi/540043368)
 
 The data associated with NTIA TM-23-XXX is contained in this repository. The data directories follow a format similar to the report with individual directories for the P0N, Q3N, and compound test cases. Each of these directories contains the measured spectrum data contained in the "Stepped" files and a folder containing all of the figures used in the Tech Memo. 
 
