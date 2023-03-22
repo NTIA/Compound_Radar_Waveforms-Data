@@ -1,0 +1,16 @@
+{
+    "creators": [
+        {   
+            "affiliation": "The Institute for Telecommunication Sciences",
+            "name": "Sanders, Geoff"
+        }
+    ],
+
+    "title": "Examining the Effects of Resolution Bandwidth when Measuring Compound Radar Waveforms Data",
+
+    "upload_type": "dataset",
+
+    "version": "1",
+
+    "keywords": ["data", "radar", "waveform", "resolution bandwidth", "P0N", "Q3N", "stepped measurement"]
+}
