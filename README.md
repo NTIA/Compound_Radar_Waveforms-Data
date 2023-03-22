@@ -2,9 +2,12 @@
 ### Examining the Effects of Resolution Bandwidth when Measuring Compound Radar Waveforms
 [![DOI](https://zenodo.org/badge/540043368.svg)](https://zenodo.org/badge/latestdoi/540043368)
 
-The data associated with NTIA TM-23-XXX is contained in this repository. The data directories follow a format similar to the report with individual directories for the P0N, Q3N, and compound test cases. Each of these directories contains the measured spectrum data contained in the "Stepped" files and a folder containing all of the figures used in the Tech Memo. 
+## Description
+The data associated with NTIA TM-23-XXX is contained in this repository. The data directories follow a format similar to the report with individual directories for the P0N, Q3N, and compound test cases. Each of these directories contains the measured spectrum data contained in the "Stepped" files and a folder containing all of the figures used in the Tech Memo.
 
-## Stepped Measurement Files ##
+## Data Format
+
+### Stepped Measurement Files
 
 The spectrum data is contained in Matlab files (.mat) that each contain the waveform number and the word Stepped in the filename. The additional tests that were not given a waveform name will have text in the filename indicating what the test case was associated with that file.
 Each RBW was collected as an "event" in the Stepped measurement file so there are a total of 12 "events" for each test case. A description of the Stepped measurement algoritm is provided in NTIA Technical Report 05-420.
