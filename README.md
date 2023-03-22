@@ -108,6 +108,7 @@ The variables contained within the measurement files follow this format:
 
 Each of the 12 events in the files is associates with a different RBW. Event 1 = 100 Hz, Event 2 = 300 Hz, Event 3 = 1 kHz, Event 4 = 3 kHz, Event 5 = 10 kHz, Event 6 = 30 kHz, Event 7 = 100 kHz, Event 8 = 300 kHz, Event 9 = 1 MHz, Event 10 = 3 MHz, Event 11 = 6 MHz, Event 12 = 8 MHz.
 
+## Sponsor
 
 ## References ##
 
