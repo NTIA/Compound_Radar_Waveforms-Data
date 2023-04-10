@@ -1,4 +1,4 @@
-# Data for NTIA Technical Memorandum TM 23-XXX
+# Data for NTIA Technical Memorandum TM 23-566
 ### Examining the Effects of Resolution Bandwidth when Measuring Compound Radar Waveforms
 [![DOI](https://zenodo.org/badge/540043368.svg)](https://zenodo.org/badge/latestdoi/XXXXXXXXXX)
 
@@ -160,7 +160,7 @@ This report and associated data were sponsored by the NTIA Office of Spectrum Ma
 
 ## References ##
 
-* [NTIA Technical Memorandum 23-XXX](<URL>)
+* [NTIA Technical Memorandum 23-566](<URL>)
 * [NTIA Technical Report 05-420](https://its.ntia.gov/umbraco/surface/download/publication?reportNumber=TR-05-420.pdf)
 
 ## Contact ##
