@@ -56,12 +56,12 @@ The variables contained within the measurement files follow this format:
    
 	| Event # | Bandwidth |
 	|:-------:|:---------:|
-	|1        |   100 Hz  |
-	|2        |   300 Hz  |
-	|3        |   1 kHz   |
-	|4        |   3 kHz   |
-	|5        |  10 kHz   |
-	|6        |  30 kHz   |
+	|1        |  100 Hz   |
+	|2        |  300 Hz   |
+	|3        |    1 kHz  |
+	|4        |    3 kHz  |
+	|5        |   10 kHz  |
+	|6        |   30 kHz  |
 	|7        |  100 kHz  |
 	|8        |  300 kHz  |
 	|9        |    1 MHz  |
@@ -71,43 +71,43 @@ The variables contained within the measurement files follow this format:
 		
 	1. Data for each event is indexed as such: event(\<event number\>).\<Field Name\>
 		1. Fields:
-			1. **ManualAttenEnabled**: vector of Booleans indicating whether or not the measurement was in manual attenuation mode or not for each corresponding step
-				1. This can be changed while an event is running so this keeps track
-			2. **MeasNotes**: a string containing the text entered into the measurement notes edit text box in the Stepped measurement GUI while the measurement was running
-			3.  **FreqMHz**: the frequency vector, in MHz, for the specified event
-			4.  **UnCorrectedMagdBm**: raw data, without primary preselector or spectrum analyzer attenuation accounted for
-			5.  **AttenCorrectedMagdBm**: data that has been corrected for primary preselector or spectrum analyzer attenuation level
-			6.  **ExceptionPoints**: vector of Booleans that indicate whether or not a specific step had an error
-				1. Errors can be caused by zero-dynamic range problem (measurement unable to determine proper attenuation level) or overloads when no more attenuation is available or measurement is in manual attenuation mode
-			7.  **Atten**: vector containing the primary preselector or spectrum analyzer attenuation used for each point.
-			8.  **CompletionTime**: time and date stamp from RSMS-5G computer indicating when the event completed
+			1. **ManualAttenEnabled**: vector of Booleans indicating whether or not the measurement was in manual attenuation mode or not for each corresponding step.
+				1. This can be changed while an event is running so this keeps track.
+			2. **MeasNotes**: a string containing the text entered into the measurement notes edit text box in the Stepped measurement GUI while the measurement was running.
+			3.  **FreqMHz**: the frequency vector, in MHz, for the specified event.
+			4.  **UnCorrectedMagdBm**: raw data, in dBm, without primary preselector or spectrum analyzer attenuation accounted for.
+			5.  **AttenCorrectedMagdBm**: data, in dBm, that has been corrected for primary preselector or spectrum analyzer attenuation level.
+			6.  **ExceptionPoints**: vector of Booleans that indicate whether or not a specific step had an error.
+				1. Errors can be caused by zero-dynamic range problem (measurement unable to determine proper attenuation level) or overloads when no more attenuation is available or measurement is in manual attenuation mode.
+			7.  **Atten**: vector containing the primary preselector or spectrum analyzer attenuation used for each point, in dB.
+			8.  **CompletionTime**: time and date stamp from RSMS-5G computer indicating when the event completed.
 			9.  **RawMagTraceMatrix**: Contains a matrix of all the spectrum analyzer sweeps used to create the overall stepped measurement spectrum.
-			10. **CalCorrectedMag**: data that has been corrected for primary preselector or spectrum analyzer attenuation level and calibration system gain data
+			10. **CalCorrectedMag**: data that has been corrected for primary preselector or spectrum analyzer attenuation level and calibration system gain data.
 			11. **PulseParamTraceData**: struct containing data taken when the pulse parameter feature is used. It will be empty, [], if pulse data is not taken.
 				1. Fields:
 					1. **PeaksMatrix**: (# of peaks)x(3) matrix
 	
 						| Column # | Value                                   |
 						|:---------|:----------------------------------------|
-						| 1        | frequency value                         |
-						| 2        | magnitude value                         |
+						| 1        | frequency value (MHz)                   |
+						| 2        | magnitude value (dBm)                   |
 						| 3        | index of the peak in the FreqMHz vector |
 	
-					2. **AntPatternTimeVect**: time vector for the antenna pattern trace
-					3. **AntPattAttenCorrMagData**: magnitude data, for the antenna pattern trace, with primary preselector or spectrum analyzer attenuation taken into account
-					4. **RotationRateVal**: average rotation rate in seconds
-					5. **PRITimeVect**: time vector for the PRI trace
-					6. **PRIAttenCorrMagData**: magnitude data, for the PRI trace, with primary preselector or spectrum analyzer attenuation taken into account
-					7. **PRIVal**: measured average pulse repetition interval in seconds
-					8. **PWTimeVect**: time vector for the trace used to calculate single pulse parameters
-					9. **PWAttenCorrMagData**: magnitude data, for the trace used to calculate single pulse parameters, with primary preselector or spectrum analyzer attenuation taken into account
-					10. **PWVal**: pulse width in seconds
-					11. **tRise**: pulse rise time in seconds
-					12. **tFall**: pulse fall time in seconds
+					2. **AntPatternTimeVect**: time vector for the antenna pattern trace.
+					3. **AntPattAttenCorrMagData**: magnitude data, for the antenna pattern trace, with primary preselector or spectrum analyzer attenuation taken into account.
+					4. **RotationRateVal**: average rotation rate in seconds.
+					5. **PRITimeVect**: time vector for the PRI trace.
+					6. **PRIAttenCorrMagData**: magnitude data, for the PRI trace, with primary preselector or spectrum analyzer attenuation taken into account, in dBm.
+					7. **PRIVal**: measured average pulse repetition interval in seconds.
+					8. **PWTimeVect**: time vector for the trace used to calculate single pulse parameters.
+					9. **PWAttenCorrMagData**: magnitude data, for the trace used to calculate single pulse parameters, with primary preselector or spectrum analyzer attenuation taken into account.
+					10. **PWVal**: pulse width in seconds.
+					11. **tRise**: pulse rise time in seconds.
+					12. **tFall**: pulse fall time in seconds.
 				2. If the measurement is unable to determine any of these fields, the affected field will contain the empty set, [].
 	
 	
-6. **EventParamIdx**: struct with fields containing indices into **EventTableData** for each of its parameters
+6. **EventParamIdx**: struct with fields containing indices into **EventTableData** for each of its parameters.
 	
 	| Field          | Index |
 	|:---------------|------:|
@@ -127,8 +127,8 @@ The variables contained within the measurement files follow this format:
 	| Presel2Path    | 14    |
 	| Presel2Atten   | 15    |
 	
-7. **EventTableData**: (# events)x(10) cell array containing all the information in the event table of the Swept measurement
-	1. Row: event number (1-12)
+7. **EventTableData**: (# events)x(10) cell array containing all the information in the event table of the Swept measurement.
+	1. Row: event number (1-12).
 	2. Columns follow this format:	
 		| Column # | Value                                                                                                  |
 		|:--------:|:-------------------------------------------------------------------------------------------------------|
@@ -149,7 +149,7 @@ The variables contained within the measurement files follow this format:
 		| 15       | secondary preselector static attenuation level                                                         |
 		
 		
-8. **FileNumber**: a number assigned by the measurement to this saved data file (determined based on other existing Stepped data files in the same directory)
+8. **FileNumber**: a number assigned by the measurement to this saved data file (determined based on other existing Stepped data files in the same directory).
 
 9. **HardwareConfig**: struct containing instrument IDs of all the connected instruments. Unused instrument fields will contain the string ‘None’.
 	| Field      | Description           |
@@ -159,16 +159,16 @@ The variables contained within the measurement files follow this format:
 	| Presel2    | secondary preselector |
 	| YIGTracker | YIG tracker           |
 	
-10. **MeasStartTime**: a string containing the time and date (from computer) that the measurement was started (ex. 05-Apr-2013 17:54:42)
+10. **MeasStartTime**: a string containing the time and date (from computer) that the measurement was started (ex. 05-Apr-2013 17:54:42).
 
-11. **MeasType**: string indicating the type of measurement, ‘Stepped’
+11. **MeasType**: string indicating the type of measurement, ‘Stepped’.
 
-12. **NumEvents**: number of events run by the measurement
+12. **NumEvents**: number of events run by the measurement.
 
 
 
 ## Sponsor
-This report and associated data were sponsored by the NTIA Office of Spectrum Management (OSM). https://www.ntia.doc.gov/office/office-spectrum-management-osm
+This report and associated data were sponsored by the NTIA Office of Spectrum Management (OSM). https://www.ntia.doc.gov/office/office-spectrum-management-osm.
 
 ## References ##
 
