@@ -33,23 +33,23 @@ load('path\to\file\filename.mat')
 ```
 
 The variables contained within the measurement files follow this format:
-1. **CalPathandFileName**: provides the directory and filename for the calibration file used to apply calibration corrections to the saved data as a single string
-    1. Will be empty (‘ ‘) if calibration corrections were not applied to the data
-    2. Ex. ‘C:\temp\Calfile1.mat’
+1. **CalPathandFileName**: provides the directory and filename for the calibration file used to apply calibration corrections to the saved data as a single string.
+    1. Will be empty (‘ ‘) if calibration corrections were not applied to the data.
+    2. Ex. ‘C:\temp\Calfile1.mat’.
   
-2. **Comments**:  contains comments entered by the user using the edit menu in the Stepped measurement
+2. **Comments**:  contains comments entered by the user using the edit menu in the Stepped measurement.
 
 3. **CompleteMeasMessage**: String indicating how the measurement arrived at completion. There are three possibilities:
-	1. ‘The measurement completed successfully’ – indicates that it ran and completed normally
-	2. ‘The measurement stopped prematurely due to error’ – indicates that a severe error occurred which required the measurement to stop
-		1. Data may not be saved properly
-		2. Most predictable errors are handled seamlessly by the measurement software, but some, such as instrument communication failures, can’t be dealt with
-	3. ‘The measurement was stopped prematurely by user’ – indicates that the user stopped the measurement before it was complete
-		1. All data up to the time the measurement was stopped will be saved however, there may be some preallocated variables that won’t contain information regarding sweeps that never got completed
+	1. ‘The measurement completed successfully’ – indicates that it ran and completed normally.
+	2. ‘The measurement stopped prematurely due to error’ – indicates that a severe error occurred which required the measurement to stop.
+		1. Data may not be saved properly.
+		2. Most predictable errors are handled seamlessly by the measurement software, but some, such as instrument communication failures, can’t be dealt with.
+	3. ‘The measurement was stopped prematurely by user’ – indicates that the user stopped the measurement before it was complete.
+		1. All data up to the time the measurement was stopped will be saved however, there may be some preallocated variables that won’t contain information regarding sweeps that never got completed.
 
 4. **ErrorLog**: (# of errors)x(2) cell array containing information regarding errors that occurred during the measurement
 	1. First column: MException object of the error, which contains a lot of information regarding the error.
-	2. Second column: time and date stamp from the RSMS-5G computer indicating when the error occurred
+	2. Second column: time and date stamp from the RSMS-5G computer indicating when the error occurred.
 	
 5. **event**: struct containing all of the data collected for each measurement event as specified in the event table. 
    Each of the 12 events in the file is associated with a different resolution bandwidth. 
