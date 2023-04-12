@@ -7,6 +7,16 @@ The data associated with NTIA TM-23-566 is contained in this repository. The dat
 
 ![Measured Spectra with different resolution bandwidths.](https://github.com/ErikHillNTIA/Examining_the_Effects_of_Resolution_Bandwidth_when_Measuring_Compound_Radar_Waveforms-Data/blob/362039f174915ccb2db1dc306d9a22c7bcab54fb/img/Waveform21_Rat1_Report.jpg "Measured Spectra with Different Resolution Bandwidths")
 
+### P0N.zip 
+Data file P0N.zip contains 9 .mat files named WaveformXSteppedfileYY.mat where X is 1-9 corresponding to the Waveform Number column in Table 1 in TM-23-566 and YY is the sequential file number for files in this data set. P0N.zip also contains 3 .mat files corresponding to the equal power, unequal power, and rise/Fall time measurements. P0N.zip contains a "Report Figs" folder with the figures produced from these .mat files used in TM-23-566.
+
+### Q3N.zip
+Data file Q3N.zip contains 9 .mat files named WaveformXXSteppedfileYY.mat where XX is 10-18 corresponding to the Waveform Number column in Table 3 in TM-23-566 and YY is the sequential file number for files in this data set. Q3N.zip also contains 4 .mat files corresponding to the equal power and unequal power measurements where either the pulse width or chirp bandwidth were varied. Q3N.zip contains the filder "Report Figs" which contains the figures produced from these .mat files used in TM-23-566.
+
+### CompoundWfms19to30.zip CompoundWfms31-40.zip CompoundWfms41to50.zip
+These .zip files contain the .mat files named WaveformXXSteppedfileYY.mat where XX is the 19-50 corresponding to the Waveform Number column in Table 5 in TM-23-566 and YY is the sequential file number for files in this data set. Some .mat files have __Rat1, __Rat100, or __Rat1000 inserted in the file name and correspond to waveforms where the P0N:Q3N ratio was either 1:1, 1:100, or 1:1000. These .zip files also contain "Report Figs" folders containing the figures produced from these .mat files used in TM-23-566.
+
+
 ## Data Format
 
 ### Stepped Measurement Files
