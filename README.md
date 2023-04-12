@@ -47,7 +47,7 @@ The variables contained within the measurement files follow this format:
 	3. ‘The measurement was stopped prematurely by user’ – indicates that the user stopped the measurement before it was complete.
 		1. All data up to the time the measurement was stopped will be saved however, there may be some preallocated variables that won’t contain information regarding sweeps that never got completed.
 
-4. **ErrorLog**: (# of errors)x(2) cell array containing information regarding errors that occurred during the measurement
+4. **ErrorLog**: (# of errors)x(2) cell array containing information regarding errors that occurred during the measurement.
 	1. First column: MException object of the error, which contains a lot of information regarding the error.
 	2. Second column: time and date stamp from the RSMS-5G computer indicating when the error occurred.
 	
@@ -85,7 +85,7 @@ The variables contained within the measurement files follow this format:
 			10. **CalCorrectedMag**: data that has been corrected for primary preselector or spectrum analyzer attenuation level and calibration system gain data.
 			11. **PulseParamTraceData**: struct containing data taken when the pulse parameter feature is used. It will be empty, [], if pulse data is not taken.
 				1. Fields:
-					1. **PeaksMatrix**: (# of peaks)x(3) matrix
+					1. **PeaksMatrix**: (# of peaks)x(3) matrix.
 	
 						| Column # | Value                                   |
 						|:---------|:----------------------------------------|
