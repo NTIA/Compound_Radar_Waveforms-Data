@@ -2,11 +2,11 @@
     "conformsTo": "https://project-open-data.cio.gov/v1.1/schema",
     "dataset": {
         "title": "Examining_the_Effects_of_Resolution_Bandwidth_when_Measuring_Compound_Radar_Waveforms-Data",
-        "description": "Data used by NTIA/ITS TR-XX-XXX Examining the Effects of Resolution Bandwidth when Measuring Compound Radar Waveforms.",
+        "description": "Data used by NTIA/ITS TR-23-566 Examining the Effects of Resolution Bandwidth when Measuring Compound Radar Waveforms.",
         "keyword": [
             "data", "radar", "waveform", "resolution bandwidth", "P0N", "Q3N", "stepped measurement"
         ],
-        "modified": "2023-XX-XXT00:00:00Z",
+        "modified": "2023-04-12T00:00:00Z",
         "publisher": {
             "name": "Institute for Telecommunication Sciences",
             "subOrganizationOf": {
