@@ -7,6 +7,8 @@ The data associated with NTIA TM-23-566 is contained in this repository. The dat
 
 ![Measured Spectra with different resolution bandwidths.](https://github.com/ErikHillNTIA/Examining_the_Effects_of_Resolution_Bandwidth_when_Measuring_Compound_Radar_Waveforms-Data/blob/362039f174915ccb2db1dc306d9a22c7bcab54fb/img/Waveform21_Rat1_Report.jpg "Measured Spectra with Different Resolution Bandwidths")
 
+## Data Files
+
 ### P0N.zip 
 Data file P0N.zip contains 9 .mat files named WaveformXSteppedfileYY.mat where X is 1-9 corresponding to the Waveform Number column in Table 1 in TM-23-566 and YY is the sequential file number for files in this data set. P0N.zip also contains 3 .mat files corresponding to the equal power, unequal power, and rise/Fall time measurements. P0N.zip contains a "Report Figs" folder with the figures produced from these .mat files used in TM-23-566.
 
