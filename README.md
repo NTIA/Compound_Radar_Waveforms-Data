@@ -10,7 +10,7 @@ The data associated with NTIA TM-23-566 is contained in this repository. The dat
 ## Data Files
 
 ### P0N.zip 
-Data file P0N.zip contains 9 .mat files named WaveformXSteppedfileYY.mat where X is 1-9 corresponding to the Waveform Number column in Table 1 in TM-23-566 and YY is the sequential file number for files in this data set. P0N.zip also contains 3 .mat files corresponding to the equal power, unequal power, and rise/Fall time measurements. P0N.zip contains a "Report Figs" folder with the figures produced from these .mat files used in TM-23-566.
+Data file P0N.zip contains 9 .mat files named WaveformXSteppedfileYY.mat where X is 1-9 corresponding to the Waveform Number column in Table 1 in TM-23-566 and YY is the sequential file number for files in this data set. P0N.zip also contains 3 .mat files corresponding to the equal power, unequal power, and rise/fall time measurements. P0N.zip contains a "Report Figs" folder with the figures produced from these .mat files used in TM-23-566.
 
 ### Q3N.zip
 Data file Q3N.zip contains 9 .mat files named WaveformXXSteppedfileYY.mat where XX is 10-18 corresponding to the Waveform Number column in Table 3 in TM-23-566 and YY is the sequential file number for files in this data set. Q3N.zip also contains 4 .mat files corresponding to the equal power and unequal power measurements where either the pulse width or chirp bandwidth were varied. Q3N.zip contains the filder "Report Figs" which contains the figures produced from these .mat files used in TM-23-566.
