@@ -175,8 +175,8 @@ This report and associated data were sponsored by the NTIA Office of Spectrum Ma
 
 ## References ##
 
-* [NTIA Technical Memorandum 23-566](<URL>)
-* [NTIA Technical Report 05-420](https://its.ntia.gov/umbraco/surface/download/publication?reportNumber=TR-05-420.pdf)
+* [NTIA Technical Memorandum 23-566](https://its.ntia.gov/publications/details.aspx?pub=3312)
+* [NTIA Technical Report 05-420](https://its.ntia.gov/publications/details.aspx?pub=2450)
 
 ## Contact ##
 
